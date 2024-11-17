@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ahmed Raza's Professional Web Developer Portfolio">
+    <title>Ahmed Raza | Full Stack Developer</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Main CSS Styles -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #333;
+            padding: 15px 0;
+            z-index: 1000;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 10px 15px;
+            transition: all 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #3498db;
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1920x800') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .hero .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+
+        .hero .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        .hero .social-icons img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .hero .cta-btn {
+            background-color: #3498db;
+            padding: 15px 30px;
+            border: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .hero .cta-btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* Skills Section */
+        .skills {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .skills h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .skills .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 30px;
+        }
+
+        .skills .card {
+            background-color: #ecf0f1;
+            padding: 40px;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .skills .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills .card img {
+            width: 60px;
+            margin-bottom: 20px;
+        }
+
+        .skills .card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #2980b9;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .hero .cta-btn {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
+
+            .skills .card {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Hi, I'm Ahmed Raza</h1>
+        <p>Full Stack Web Developer</p>
+        <button class="cta-btn" onclick="window.location.href='#contact'">Get in Touch</button>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://github.com" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
+            <a href="https://twitter.com" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="card">
+                <img src="html-icon.png" alt="HTML">
+                <h3>HTML</h3>
+            </div>
+            <div class="card">
+                <img src="css-icon.png" alt="CSS">
+                <h3>CSS</h3>
+            </div>
+            <div class="card">
+                <img src="js-icon.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="card">
+                <img src="php-icon.png" alt="PHP">
+                <h3>PHP</h3>
+            </div>
+            <div class="card">
+                <img src="laravel-icon.png" alt="Laravel">
+                <h3>Laravel</h3>
+            </div>
+            <div class="card">
+                <img src="react-icon.png" alt="React.js">
+                <h3>React.js</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Ahmed Raza. All rights reserved. | <a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
+    </footer>
+
+</body>
+
+</html>
